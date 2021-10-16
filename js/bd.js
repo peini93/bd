@@ -55,6 +55,7 @@ $(function(){
 function GOTOP(){
 	$('.gotop,.logo').on("click", function(){
 	  	$('html,body').animate({scrollTop:0},800);
+			$('#a02').removeClass('bgtop');
 	});
 	$(window).scroll(function(){
        var Y = $(window).scrollTop();
@@ -72,14 +73,16 @@ function MENU(){
  			ACTION(1);
 			$('html,body').stop().animate({scrollTop:$("#a01").offset().top},800);
 			$(".b_m li a" ).removeClass('act');
-			$(this).addClass('act');	
+			$(this).addClass('act');
+			$('#a02').removeClass('bgtop');	
 			return false;
 	});
 	$(".b_m li:nth-of-type(2) a").on("click", function(){
 			ACTION(2);
 			$('html,body').stop().animate({scrollTop:$("#a01").offset().top},800);
 			$(".b_m li a" ).removeClass('act');
-			$(this).addClass('act');	
+			$(this).addClass('act');
+			$('#a02').removeClass('bgtop');	
 			return false;
 	});
 	$(".b_m li:nth-of-type(3) a").on("click", function(){
@@ -87,6 +90,7 @@ function MENU(){
 			$('html,body').stop().animate({scrollTop:$("#a02").offset().top},800);
 			$(".b_m li a" ).removeClass('act');
 			$(this).addClass('act');
+			$('#a02').addClass('bgtop');
 			return false;
 	});
 
@@ -94,6 +98,7 @@ function MENU(){
 			ACTION(4);
 			$('html,body').stop().animate({scrollTop:$("#a03").offset().top},800);
 			$(".b_m li a" ).removeClass('act');
+			$('#a02').removeClass('bgtop');
 			$(this).addClass('act');
 			return false;
 	});
