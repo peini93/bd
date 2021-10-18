@@ -441,11 +441,17 @@ html, body {
   position: relative;
   z-index: 10;
 }
-
-.about {
+.allbg{
   position: relative;
   width: 100%;
-  height: 873px;
+  height: 900px;
+  background: url(../img/allbg.png) center top repeat;
+}
+.about {
+  position: relative;
+  margin: auto;
+  width: 1400px;
+  height: 900px;
   background: url(../img/bd_bg.png) center top no-repeat;
   background-size: cover;
 }
@@ -723,6 +729,10 @@ html, body {
 
 @media only screen and (max-width: 960px) {
 
+  .allbg{
+    height: auto;
+  }
+
   #jSplash {
     width: 215px;
     height: 25px;
@@ -791,6 +801,7 @@ html, body {
   }
 
   .about {
+    width: 100%;
     height: 1200px;
     background: url(../img/iphone_bd_bg.png) center bottom #292b39 no-repeat;
     background-size: cover;
